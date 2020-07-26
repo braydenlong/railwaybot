@@ -28,8 +28,7 @@ url = "https://api.telegram.org/bot1192184755:AAFkF7Vp3HYmMUioW-V9Ny1bFunwZep2-O
 
 def start(update, context):
     reply_keyboard = [['/help', '/joke', '/enter', '/status']]
-    update.message.reply_text("Hello! Welcome To Railway! How can I help?",
-                              reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True))
+    update.message.reply_text("Hello! Welcome To Railway! How can I help?")
 
 
 def help(update, context):

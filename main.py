@@ -3,7 +3,7 @@ import requests
 from telegram import (ReplyKeyboardMarkup, ReplyKeyboardRemove)
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import re
-import telepot
+#import telepot
 from flask import Flask
 import os
 PORT = int(os.environ.get('PORT', 5000))

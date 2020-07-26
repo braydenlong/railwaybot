@@ -103,7 +103,7 @@ def main():
                           port=int(PORT),
                           url_path='1192184755:AAFkF7Vp3HYmMUioW-V9Ny1bFunwZep2-Os')
 
-    updater.bot.setWebhook('https://railway-bott.herokuapp.com/' +
+    updater.bot.setWebhook('https://mysterious-wildwood-07373.herokuapp.com/' +
                            '1192184755:AAFkF7Vp3HYmMUioW-V9Ny1bFunwZep2-Os')
 
 # Run the bot until you press Ctrl-C or the process receives SIGINT,

@@ -4,6 +4,8 @@ from telegram import (ReplyKeyboardMarkup, ReplyKeyboardRemove)
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import re
 import telepot
+import os
+PORT = int(os.environ.get('PORT', 5000))
 # import daemon #supposed to run the bot without running the file
 
 

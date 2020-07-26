@@ -98,11 +98,16 @@ def main():
     # dp.add_handler(CommandHandler("bop", bop))  # spoilt function
     dp.add_handler(MessageHandler(Filters.text, echo))
     # Start the Bot
-    updater.start_polling()
+    updater.start_webhook(listen="0.0.0.0",
+                          port=int(PORT),
+                          url_path='1192184755:AAFkF7Vp3HYmMUioW-V9Ny1bFunwZep2-Os')
 
-    # Run the bot until you press Ctrl-C or the process receives SIGINT,
-    # SIGTERM or SIGABRT. This should be used most of the time, since
-    # start_polling() is non-blocking and will stop the bot gracefully.
+    updater.bot.setWebhook('https://blooming-mountain-13782.herokuapp.com/' +
+                           '1192184755:AAFkF7Vp3HYmMUioW-V9Ny1bFunwZep2-Os')
+
+# Run the bot until you press Ctrl-C or the process receives SIGINT,
+# SIGTERM or SIGABRT. This should be used most of the time, since
+# start_polling() is non-blocking and will stop the bot gracefully.
     updater.idle()
 
 

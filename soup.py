@@ -9,5 +9,6 @@ html = response.content
 
 soup = BeautifulSoup(html, "html.parser")
 
-price = soup.find("div", attrs={"class": "dashboard_reponses__3KJ0u"})
+price = soup.find_all("div")
+# attrs={"class": "dashboard_reponses__3KJ0u"})
 print(price)

@@ -43,7 +43,7 @@ def enter(update, context):
 
 
 def echo(update, context):
-    reply_keyboard = [['/help', '/joke', '/enter', '/status']]
+    reply_keyboard = [['/help', '/status', '/enter']]
     update.message.reply_text("Oh no! Choose a valid command!",
                               reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True))
 

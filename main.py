@@ -12,7 +12,7 @@ PORT = int(os.environ.get('PORT', 5000))
 
 # from telegram_bot import TelegramBot
 token = '1192184755:AAFkF7Vp3HYmMUioW-V9Ny1bFunwZep2-Os'
-TelegramBot = telepot.Bot(token)
+#TelegramBot = telepot.Bot(token)
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',

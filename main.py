@@ -48,6 +48,12 @@ def echo(update, context):
                               reply_markup=ReplyKeyboardMarkup(reply_keyboard, one_time_keyboard=True))
 
 
+def status(update, context):
+    update.message.reply_text(
+        "Your current responses is: "
+    )
+
+
 def get_url():
 
     contents = requests.get('https://random.dog/woof.json').json()
@@ -95,6 +101,7 @@ def main():
     dp.add_handler(CommandHandler("joke", get_joke))
     dp.add_handler(CommandHandler("help", help))
     dp.add_handler(CommandHandler("enter", enter))
+    dp.add_handler(CommandHandler("status", status))
     # dp.add_handler(CommandHandler("bop", bop))  # spoilt function
     dp.add_handler(MessageHandler(Filters.text, echo))
     # Start the Bot
